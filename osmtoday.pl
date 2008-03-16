@@ -8,7 +8,8 @@ use Geo::Proj4;
 
 my $proj = Geo::Proj4->new(proj => "merc", datum => "WGS84");
 
-my $file = '/home/kara/dev/osmtoday/sample-data/hexagone-diff-latest.osc';
+#my $file = '/home/kara/dev/osmtoday/sample-data/hexagone-diff-latest.osc';
+my $file = shift;
 my $background_file = '/home/kara/dev/osmtoday/img/bg.png';
 
 my $parser = XML::Parser->new(ErrorContext => 2, Style => "Tree");
